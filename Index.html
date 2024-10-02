@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Juego de Tatetí</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tatetí</h1>
+        <div id="turn-indicator">Turno de: <span id="current-player">X</span></div>
+        
+        <div class="scoreboard">
+            <div class="score">Jugador X: <span id="scoreX">0</span></div>
+            <div class="score">Jugador O: <span id="scoreO">0</span></div>
+        </div>
+        
+        <div class="board" id="board">
+            <div class="cell" data-cell-index="0"></div>
+            <div class="cell" data-cell-index="1"></div>
+            <div class="cell" data-cell-index="2"></div>
+            <div class="cell" data-cell-index="3"></div>
+            <div class="cell" data-cell-index="4"></div>
+            <div class="cell" data-cell-index="5"></div>
+            <div class="cell" data-cell-index="6"></div>
+            <div class="cell" data-cell-index="7"></div>
+            <div class="cell" data-cell-index="8"></div>
+        </div>
+        
+        <div class="button-container">
+            <button id="restart-button">Reiniciar Juego</button>
+        </div>
+        
+        <div id="winnerMessage" class="winner-message">
+            <p id="winnerText"></p>
+            <button id="play-again">Volver a Jugar</button>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
